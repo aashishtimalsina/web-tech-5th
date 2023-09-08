@@ -1,0 +1,17 @@
+@media (max-width:1400px) {
+    #box1{
+        background-color: rgb(129, 7, 7);
+        display: block;
+        color: aliceblue;
+    }
+    #box2{
+        background-color: rgb(161, 201, 67);
+        display: block;
+        color: aliceblue;
+    }
+    #box3{
+        background-color: rgb(121, 26, 100);
+        display: block;
+        color: aliceblue;
+    }
+}
