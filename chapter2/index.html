@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/css/nepali.datepicker.v4.0.1.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="card">
+        <form action="">
+            <br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+            <label for="dob">Date of Birth</label>
+            <input type="text" id="nepali-datepicker" name="dob">
+            <br><br>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+            <br><br>
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <br><br>
+            <label>Courses that I want to join</label>
+            <input type="checkbox" id="html" name="courses[]" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="courses[]" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="courses[]" value="JavaScript">
+            <label for="js">JavaScript</label>
+            <br><br>
+            <label for="payment">Pay Through:</label>
+            <select id="payment" name="payment">
+                <option value="Esewa">Esewa</option>
+                <option value="Phone Pay">Phone Pay</option>
+                <option value="Khalti">Khalti</option>
+            </select>
+            <br><br>
+            <label for="feedback">Feedback</label>
+            <br>
+            <textarea id="feedback" name="feedback" cols="30" rows="10"></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+            <br> <br>
+        </form>
+    </div>
+
+    <div class="box">
+        <p>border-box</p>
+        <div id="example1">
+            <p>The background extends behind the border.</p>
+        </div>
+
+        <p>padding-box</p>
+        <div id="example2">
+            <p>The background extends to the inside edge of the border.</p>
+        </div>
+
+        <p>content-box</p>
+        <div id="example3">
+            <p>The background extends to the edge of the content box.</p>
+        </div>
+    </div>
+
+    <script src="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/js/nepali.datepicker.v4.0.1.min.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var mainInput = document.getElementById("nepali-datepicker");
+            mainInput.nepaliDatePicker();
+        };
+    </script>
+
+</body>
+
+</html>
